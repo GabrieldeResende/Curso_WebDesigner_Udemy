@@ -1,0 +1,20 @@
+<html>
+    <body>
+        <script>   
+            let processoAssincrono = new Promise((resolve, reject) => {
+                setTimeout(() => resolve("sucesso no processo Assincrono", 3000))
+            })
+
+            async function recuperarDados() {
+                await processoAssincrono.then(p => console.log(p))
+
+                console.log("Processamento Assincrono 1")
+
+            
+            }
+
+            recuperarDados()
+            console.log("Fim")
+        </script>
+    </body>
+</html>

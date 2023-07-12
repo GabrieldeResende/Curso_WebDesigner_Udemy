@@ -1,0 +1,29 @@
+<html>
+    <body>
+        <script>   
+            let v1 = 10
+            let v2 = null // false
+            let v3 = undefined //false
+            let v4 = 0 //false
+            let v5 = "" //false
+            let v6 = "uma string"
+
+
+            v1 ||= 50
+            v2 ||= 100
+            v3 ||= 200
+            v4 ||= 300
+            v5 ||= 400
+            v6 ||= 100
+
+
+            console.log("v1: ", v1)
+            console.log("v2: ", v2)
+            console.log("v3: ", v3)
+            console.log("v4: ", v4)
+            console.log("v5: ", v5)
+            console.log("v6: ", v6)
+
+        </script>
+    </body>
+</html>

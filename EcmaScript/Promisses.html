@@ -1,0 +1,41 @@
+<html>
+    <body>
+        <div id = "teste"></div>
+        <script>   
+            let Promessa = new Promise((resolve, reject) => {
+
+
+
+                 
+
+                setTimeout(() => {
+
+                    let respostaAquisicao = {}
+
+
+                    if (false) {
+                        respostaAquisicao = {
+                            codigo: 1050,
+                            erro: "falha na aquisição"
+                        }
+
+                        reject(respostaAquisicao)
+                    }
+
+                    respostaAquisicao = {
+                        0: {id: 1, nome: "Joao"},
+                        1: {id: 2, nome: "Jose"},
+                        2: {id: 3, nome: "Maria"},
+
+                    }
+
+                    resolve(respostaAquisicao)
+
+                }, 4000)  
+
+            }).then(dados => {
+                console.log("operador sequencial: ", dados)
+            })
+        </script>
+    </body>
+</html>

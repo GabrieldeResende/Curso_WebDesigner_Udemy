@@ -1,0 +1,17 @@
+<html>
+    <body>
+        <div id = "teste"></div>
+        <script>
+        //string
+        let tituloArtigo = "como ultilizar rest/spread"
+        console.log(...tituloArtigo)
+        console.log([...tituloArtigo])
+        console.log({...tituloArtigo})
+
+        let pessoa = { nome: "Gabriel", idade: "24"}
+        let cadastroCompleto = {endereco: "Qr 606 conj 08 casa 12", ...pessoa}
+        console.log(cadastroCompleto)
+
+        </script>
+    </body>
+</html>

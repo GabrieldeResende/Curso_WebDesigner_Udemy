@@ -1,0 +1,19 @@
+<html>
+    <body>
+        <div id = "teste"></div>
+        <script>
+            let produto = {
+                descricao: "notebook",
+                preco : "2500",
+                detalhes: {
+                    fabricante: "ABC",
+                    marca: "XYZ",
+                }
+            }
+
+            let {descricao: d, preco: p} = produto
+            //console.log(descricao, preco)
+            console.log(d, p)
+        </script>
+    </body>
+</html>
